@@ -195,6 +195,7 @@ func NewClient(config *Config) *http.Client {
 	// skip certification check for self-signed certificates
 	tlsconfig := &tls.Config{
 		InsecureSkipVerify: true,
+		CipherSuites:       config.cipher,
 	}
 
 	// TODO: tcp options
