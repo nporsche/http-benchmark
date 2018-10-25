@@ -12,8 +12,8 @@ Installation
 2. download and build Go-HttpBench
 
 ```
-go get github.com/parkghost/gohttpbench
-go build -o gb github.com/parkghost/gohttpbench
+go get github.com/nporsche/http-benchmark
+go build -o gb github.com/nporsche/http-benchmark
 ```
 
 Usage
@@ -38,6 +38,7 @@ Options are:
   -u="": File containing data to PUT. Remember also to set -T
   -v=0: How much troubleshooting info to print
   -z=false: Use HTTP Gzip feature
+  -Z="TLS_RSA_WITH_AES_128_GCM_SHA256", Use specific cipher
 ```
 
 ### Example:
