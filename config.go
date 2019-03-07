@@ -62,7 +62,7 @@ func LoadConfig() (config *Config, err error) {
 	showHelp := flag.Bool("h", false, "Display usage information (this message)")
 	cipherString := flag.String("Z", "", "tls cipher from https://www.iana.org/assignments/tls-parameters/tls-parameters.xml")
 
-	var userAgent string
+	var userAgent *string
 	userAgent = flag.String("U", "Nporsche-AB", "Customized user agent")
 
 	flag.Usage = func() {
